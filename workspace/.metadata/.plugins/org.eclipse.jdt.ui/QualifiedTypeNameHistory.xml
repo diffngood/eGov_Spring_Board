@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="egovframework.example.sample.service.DeptVO"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="egovframework.example.sample.service.DeptService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl"/>
+    <fullyQualifiedTypeName name="egov.main.service.MainService"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
+    <fullyQualifiedTypeName name="egovframework.rte.psl.dataaccess.mapper.Mapper"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
+    <fullyQualifiedTypeName name="javax.annotation.Resource"/>
+    <fullyQualifiedTypeName name="egov.board.service.BoardService"/>
+    <fullyQualifiedTypeName name="egov.board.dao.BoardMapper"/>
+    <fullyQualifiedTypeName name="javax.validation.Validation"/>
+    <fullyQualifiedTypeName name="com.lib.util.Validation_Form"/>
+    <fullyQualifiedTypeName name="com.lib.model.UserVO"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>
