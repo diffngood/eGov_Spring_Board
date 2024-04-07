@@ -25,4 +25,5 @@
     <fullyQualifiedTypeName name="com.lib.model.UserVO"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo"/>
 </qualifiedTypeNameHistroy>

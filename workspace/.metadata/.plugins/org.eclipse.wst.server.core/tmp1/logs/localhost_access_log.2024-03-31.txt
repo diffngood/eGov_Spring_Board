@@ -1,0 +1,17 @@
+127.0.0.1 - - [31/Mar/2024:16:29:29 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:16:29:35 +0900] "GET /myproject1/deptWrite.do HTTP/1.1" 404 834
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:16:29:36 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:16:30:14 +0900] "GET /Egov_WEB/boardWrite.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:16:30:14 +0900] "GET /Egov_WEB/login.do;jsessionid=5EA9EB59E3DBA9DCEB2708A8A306CDD3 HTTP/1.1" 200 289
+127.0.0.1 - - [31/Mar/2024:17:09:57 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:09:57 +0900] "GET /Egov_WEB/boardList.do?pageNo=1 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:09:58 +0900] "GET /Egov_WEB/login.do HTTP/1.1" 200 289
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:10:08 +0900] "GET /Egov_WEB/boardList.do?pageNo=1 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:10:08 +0900] "GET /Egov_WEB/login.do HTTP/1.1" 200 289
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:10:14 +0900] "POST /Egov_WEB/loginSubmission.do HTTP/1.1" 200 172
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:10:15 +0900] "GET /Egov_WEB/boardList.do?pageNo=1 HTTP/1.1" 200 1510
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:10:17 +0900] "GET /Egov_WEB/boardView.do?brdid=2 HTTP/1.1" 200 318
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:14:44 +0900] "GET /Egov_WEB/boardList.do?pageNo=1 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:14:44 +0900] "GET /Egov_WEB/login.do HTTP/1.1" 200 289
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:14:48 +0900] "POST /Egov_WEB/loginSubmission.do HTTP/1.1" 200 172
+0:0:0:0:0:0:0:1 - - [31/Mar/2024:17:14:49 +0900] "GET /Egov_WEB/boardList.do?pageNo=1 HTTP/1.1" 200 1510

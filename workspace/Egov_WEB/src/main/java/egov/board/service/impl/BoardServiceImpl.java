@@ -14,6 +14,7 @@ import com.lib.util.Validation_Form;
 import egov.board.dao.BoardMapper;
 import egov.board.service.BoardService;
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
+import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 
 
 @Service("BoardService")
@@ -95,14 +96,37 @@ public class BoardServiceImpl extends EgovAbstractServiceImpl implements BoardSe
 		if (request.getSession().getAttribute("uservo") == null) {
 			throw new Exception("로그인 안했음");
 		}
+		String pageNo = request.getParameter("pageNo");
+		if(pageNo == null || pageNo.equals("")) {
+			pageNo="1";
+		} else {
+			pageNo = request.getParameter("pageNo");
+		}
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(Integer.parseInt(pageNo));
+		// 몇 페이지까지 할지
+		paginationInfo.setPageSize(10);
+		// 한페이지에 몇개 보여줄지
+		paginationInfo.setRecordCountPerPage(10);
 		
 		HashMap<String, Object> paramMap = new HashMap<String, Object>();
+		paramMap.put("pi_offset", (paginationInfo.getCurrentPageNo()-1)*paginationInfo.getRecordCountPerPage());
+		paramMap.put("pi_recordCountPerPage", paginationInfo.getRecordCountPerPage());
+		paramMap.put("out_listcount", 0);
 		paramMap.put("out_state", 0);
 		ArrayList<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
 		list = boardMapper.showBoardList(paramMap);
+		int listCount = Integer.parseInt(paramMap.get("out_listcount").toString());
+		paginationInfo.setTotalRecordCount(listCount);
+		
 		if(list == null) {
 			throw new Exception("페이지찾을수없음");
 		}
+		
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+		resultMap.put("paginationInfo", paginationInfo);
+		resultMap.put("listCount", listCount);
+		list.add(resultMap);
 		
 		return list;
 	}

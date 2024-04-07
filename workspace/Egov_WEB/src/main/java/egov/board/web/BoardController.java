@@ -136,6 +136,8 @@ public class BoardController {
 			return "error/error";
 		}
 		
+		model.addAllAttributes(list.get(list.size()-1));
+		list.remove(list.size()-1);
 		model.addAttribute("boardlist", list);
 		
 		return "board/boardlist2";

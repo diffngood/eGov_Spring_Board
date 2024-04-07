@@ -1,9 +1,0 @@
-package egov.board.service;
-
-import java.util.HashMap;
-
-import javax.servlet.http.HttpServletRequest;
-
-public interface BoardService {
-
-}
